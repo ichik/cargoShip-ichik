@@ -58,7 +58,7 @@ local pager = cargoShip{
 	name = "nanoTalk",
 	parent = guild,
 }
-pager:SetPoint("RIGHT",45, 0)
+pager:SetPoint("RIGHT",50, 0)
 
 --[[BOTTOM RIGHT ]]--
 
