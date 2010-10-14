@@ -88,7 +88,7 @@ local stack = cargoShip{
 stack:SetPoint("LEFT",-40,0)
 
 local dps = cargoShip{
-	name = "Skada",
+	name = "Numeration",
 	parent = stack
 }
 dps:SetPoint("LEFT",-100,0)
