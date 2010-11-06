@@ -40,7 +40,7 @@ local money = cargoShip{
 	name = "|cFFFFB366Ara|r Money",
 	parent = durability,
 }
-money:SetPoint("RIGHT",80, 0)
+money:SetPoint("RIGHT",82, 0)
 
 local friends = cargoShip{
 	name = "|cFFFFB366Ara|r Friends",
@@ -75,7 +75,7 @@ local memory = cargoShip{
 memory:SetPoint("LEFT",-80,0)
 
 local fps = cargoShip{
-	name = "shFPS",
+	name = "shFps",
 	parent = memory
 }
 fps:SetPoint("LEFT",-60,0)
