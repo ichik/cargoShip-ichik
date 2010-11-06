@@ -69,14 +69,20 @@ local latency = cargoShip{
 latency:SetPoint("BOTTOMRIGHT", -30,5)
 
 local memory = cargoShip{
-	name = "shPerformance",
+	name = "shMem",
 	parent = latency
 }
-memory:SetPoint("LEFT",-60,0)
+memory:SetPoint("LEFT",-80,0)
+
+local fps = cargoShip{
+	name = "shFPS",
+	parent = memory
+}
+fps:SetPoint("LEFT",-60,0)
 
 local stack = cargoShip{
 	name = "BankStack",
-	parent = memory,
+	parent = fps,
 	noText = true
 }
 stack:SetPoint("LEFT",-40,0)
