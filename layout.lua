@@ -115,7 +115,8 @@ vol:SetPoint("RIGHT",40,0)
 
 local loot = cargoShip{
 	name = "AtlasLoot",
-	parent = vol
+	parent = vol,
+	noText = true
 }
 loot:SetPoint("RIGHT",30,0)
 
