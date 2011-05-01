@@ -58,14 +58,14 @@ local guild = cargoShip{
 	parent = friends,
 	width = 50
 }
-guild:SetPoint("CENTER", UIParent, "BOTTOMLEFT", LPx+190, LPy)
+guild:SetPoint("CENTER", UIParent, "BOTTOMLEFT", LPx+195, LPy)
 
 local pager = cargoShip{
 	name = "nanoTalk",
 	parent = guild,
 	width = 20
 }
-pager:SetPoint("CENTER", UIParent, "BOTTOMLEFT", LPx+240, LPy)
+pager:SetPoint("CENTER", UIParent, "BOTTOMLEFT", LPx+245, LPy)
 
 --[[BOTTOM RIGHT ]]--
 
@@ -116,14 +116,14 @@ local err = cargoShip{
 	parent = equip,
 	width = 10
 }
-err:SetPoint("CENTER", UIParent, "TOP",TPx+60,TPy)
+err:SetPoint("CENTER", UIParent, "TOP",TPx+70,TPy)
 
 local vol = cargoShip{
 	name = "Volumizer",
 	parent = equip,
 	width = 40
 }
-vol:SetPoint("CENTER", UIParent, "TOP",TPx+95,TPy)
+vol:SetPoint("CENTER", UIParent, "TOP",TPx+105,TPy)
 
 local loot = cargoShip{
 	name = "AtlasLoot",
@@ -131,4 +131,4 @@ local loot = cargoShip{
 	noText = true,
 	width = 10
 }
-loot:SetPoint("CENTER", UIParent, "TOP",TPx+140,TPy)
+loot:SetPoint("CENTER", UIParent, "TOP",TPx+150,TPy)
