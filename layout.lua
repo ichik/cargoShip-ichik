@@ -116,14 +116,14 @@ local err = cargoShip{
 	parent = equip,
 	width = 10
 }
-err:SetPoint("CENTER", UIParent, "TOP",TPx+55,TPy)
+err:SetPoint("CENTER", UIParent, "TOP",TPx+60,TPy)
 
 local vol = cargoShip{
 	name = "Volumizer",
 	parent = equip,
 	width = 40
 }
-vol:SetPoint("CENTER", UIParent, "TOP",TPx+90,TPy)
+vol:SetPoint("CENTER", UIParent, "TOP",TPx+95,TPy)
 
 local loot = cargoShip{
 	name = "AtlasLoot",
@@ -131,4 +131,4 @@ local loot = cargoShip{
 	noText = true,
 	width = 10
 }
-loot:SetPoint("CENTER", UIParent, "TOP",TPx+135,TPy)
+loot:SetPoint("CENTER", UIParent, "TOP",TPx+140,TPy)
