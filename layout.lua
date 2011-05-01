@@ -30,88 +30,105 @@ local cargoShip = LibStub("LibCargoShip-2.1")
 
 --[[ BOTTOM LEFT ]]--
 
+local LPx, LPy = 50, 10
+
 local durability = cargoShip{
     name = "Durability",
-	scale = 1.2
+	scale = 1.2,
+	width = 70,
 }
-durability:SetPoint("BOTTOMLEFT",30,5)
+durability:SetPoint("CENTER", UIParent, "BOTTOMLEFT", LPx, LPy)
 
 local money = cargoShip{
 	name = "|cFFFFB366Ara|r Money",
 	parent = durability,
+	width = 70
 }
-money:SetPoint("RIGHT",82, 0)
+money:SetPoint("CENTER", UIParent, "BOTTOMLEFT", LPx+80, LPy)
 
 local friends = cargoShip{
 	name = "|cFFFFB366Ara|r Friends",
 	parent = money,
+	width = 15
 }
-friends:SetPoint("RIGHT",80, 0)
+friends:SetPoint("CENTER", UIParent, "BOTTOMLEFT", LPx+160, LPy)
 
 local guild = cargoShip{
 	name = "|cFFFFB366Ara|r Guild",
 	parent = friends,
+	width = 50
 }
-guild:SetPoint("RIGHT",40, 0)
+guild:SetPoint("CENTER", UIParent, "BOTTOMLEFT", LPx+190, LPy)
 
 local pager = cargoShip{
 	name = "nanoTalk",
 	parent = guild,
+	width = 20
 }
-pager:SetPoint("RIGHT",50, 0)
+pager:SetPoint("CENTER", UIParent, "BOTTOMLEFT", LPx+240, LPy)
 
 --[[BOTTOM RIGHT ]]--
 
+local RPx, RPy = -50, 10
+
 local latency = cargoShip{
 	name = "shLatency",
-	scale = 1.2
+	scale = 1.2,
+	width = 80
 }
-latency:SetPoint("BOTTOMRIGHT", -30,5)
+latency:SetPoint("CENTER", UIParent, "BOTTOMRIGHT", RPx, RPy)
 
 local fps = cargoShip{
 	name = "shFps",
-	parent = latency
+	parent = latency,
+	width  = 50
 }
-fps:SetPoint("LEFT",-80,0)
+fps:SetPoint("CENTER", UIParent, "BOTTOMRIGHT", RPx-90, RPy)
 
 local stack = cargoShip{
 	name = "BankStack",
 	parent = fps,
-	noText = true
+	noText = true,
+	width = 10
 }
-stack:SetPoint("LEFT",-40,0)
+stack:SetPoint("CENTER", UIParent, "BOTTOMRIGHT", RPx-150, RPy)
 
 local dps = cargoShip{
 	name = "Numeration",
-	parent = stack
+	parent = stack,
+	width = 110
 }
-dps:SetPoint("LEFT",-100,0)
+dps:SetPoint("CENTER", UIParent, "BOTTOMRIGHT", RPx-220, RPy)
 
 --[[ TOP ]]--
 
+local TPx, TPy = -50, -10
+
 local equip = cargoShip{
 	name = "Broker_Equipment",
-	scale = 1.2
+	scale = 1.2,
+	width = 120
 }
-equip:SetPoint("TOP",-20,-5)
+equip:SetPoint("CENTER", UIParent, "TOP",TPx,TPy)
 
 local err = cargoShip{
 	name = "tekErr",
-	parent = equip
+	parent = equip,
+	width = 10
 }
-err:SetPoint("RIGHT",80,0)
+err:SetPoint("CENTER", UIParent, "TOP",TPx+55,TPy)
 
 local vol = cargoShip{
 	name = "Volumizer",
-	parent = err
+	parent = equip,
+	width = 40
 }
-vol:SetPoint("RIGHT",40,0)
+vol:SetPoint("CENTER", UIParent, "TOP",TPx+90,TPy)
 
 local loot = cargoShip{
 	name = "AtlasLoot",
 	parent = vol,
-	noText = true
+	noText = true,
+	width = 10
 }
-loot:SetPoint("RIGHT",30,0)
-
-f:RegisterEvent"PLAYER_ENTERING_WORLD"
+loot:SetPoint("CENTER", UIParent, "TOP",TPx+135,TPy)
